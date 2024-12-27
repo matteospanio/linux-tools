@@ -1,0 +1,28 @@
+.\" Manpage for linux-tools
+.\" Contact: spanio@dei.unipd.it to correct errors or typos.
+.TH man 8 "2024-12-27" "1.0" "linux-tools" "linux-tools"
+.SH NAME
+linux-tools \- Linux tools for system administrators
+.SH SYNOPSIS
+.B lt
+[\fIARGUMENT\fR]
+.SH DESCRIPTION
+The \fBlt\fR command is a simple command that automates simple operations such as system update or cache cleaning.
+.SH OPTIONS
+.TP
+\fB-h, --help\fR
+Prints the help message.
+.TP
+\fB-v, --version\fR
+Prints the version.
+.SH EXAMPLES
+.TP
+.B lt -h
+Shows the help message.
+.TP
+.B lt -v
+Shows the version of the command.
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Matteo Spanio <spanio@dei.unipd.it>
