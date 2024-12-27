@@ -20,7 +20,7 @@ install: build
 
 uninstall:
 	rm -f $(BIN_PATH)/lt
-	sudo rm -f $$HOME/.local/share/man/man1/lt.1
+	rm -f $$HOME/.local/share/man/man1/lt.1
 
 clean:
 	rm -fr build utils.sh lt
