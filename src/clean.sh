@@ -60,6 +60,14 @@ function clean {
 
         test_exit_code
     fi
+
+    if command_exists tldr
+    then
+        log_msg "[+] Cleaning tldr cache"
+        tldr --clear-cache
+
+        test_exit_code
+    fi
 }
 
 clean

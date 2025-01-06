@@ -3,7 +3,7 @@
 # Update all installed packages
 # Usage: ./update.sh
 # Description: This script will update all installed packages on the system
-#   including apt, yum, pacman, flatpak, snap, pipx, and poetry
+#   including apt, yum, pacman, flatpak, snap, pipx, poetry, tldr amd oh-my-shell
 # Author: Matteo Spanio
 
 source color_log.sh
@@ -51,6 +51,18 @@ function update() {
     then
         log_msg "[+] Updating poetry"
         poetry self update
+    fi
+
+    if command_exists omz
+    then
+        log_msg "[+] Updating oh-my-zsh"
+        omz update
+    fi
+
+    if command_exists tldr
+    then
+        log_msg "[+] Updating tldr"
+        tldr --update
     fi
 }
 
